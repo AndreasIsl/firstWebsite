@@ -1,0 +1,12 @@
+
+8
+hello.js,2\0\2048013924c8c71d42af4197cea8b89e9ae00716
+@
+firstWebsite.iml,a\c\ac2f7592c694a774c0459045e5cf3b6737c7f162
+<
+package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
+:
+
+index.html,f\6\f6013a00b362253c64368d6eebc50ea2131754e2
+9
+	style.css,4\6\46e3381e9569c09e85a30b9e5a2af7525ee9fd78

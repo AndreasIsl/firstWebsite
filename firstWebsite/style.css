@@ -1,0 +1,155 @@
+/* CSS-Stile für die Webseite */
+
+.title{
+    text-transform: uppercase;
+}
+
+.navTopBar{
+    background-color: #141414;
+    margin: 0;
+    height: 80px;
+    width: 100% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navList{
+}
+
+
+.NavBtn{
+    background-color: #141414;
+    color: #efebdc;
+}
+
+.navList li{
+    display: inline-block;
+    margin: 10px 20px;
+    border: 3px groove #141414;
+}
+
+
+header{
+    width: 100%  ;
+    position: fixed;
+    border: 1px solid black;
+
+}
+
+body {
+
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    height: 100%; /* Volle Höhe des Bildschirms */
+    margin: 0; /* Margin entfernen */
+}
+
+h1 {
+    margin-left: 40px;
+    font-family: 'Arial', sans-serif;
+    color: #efebdc;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+h2 {
+    font-family: 'Times New Roman', sans-serif;
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: max-content; /* Höhe des Containers anpassen */
+ /* Volle Höhe des Bildschirms */
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 800px;
+    overflow: hidden; /* Ensure image stays within container */
+}
+
+.image-container img{
+    border: 2px solid black;
+
+}
+#stacyimg {
+    width: 60%; /* Make the image fill the container */
+    height: 796px; /* Make the image fill the container */
+    object-fit: cover; /* Maintain aspect ratio and cover entire space */
+}
+
+.vertical-stripe {
+    border: 1px solid black;
+
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column; /* Anordnen der Elemente in einer vertikalen Linie */
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* Breite des Streifens */
+    height: 100%; /* Volle Höhe des Bildschirms */
+    background-color: #efebdc; /* Verlauf von oben nach unten */
+    text-align: left;
+}
+.description{
+    width: 600px;
+}
+
+.fab {
+    margin: 20px;
+    height: 80px;
+    width:  80px;;
+    border-radius: 50%; /* Rundes Aussehen */
+    background-color: #141414; /* Hintergrundfarbe */
+    color: #efebdc; /* Textfarbe */
+    font-size: 24px; /* Textgröße */
+    text-align: center; /* Zentrieren des Textes */
+    line-height: 60px; /* Vertikal zentrieren */
+    cursor: pointer; /* Zeiger auf Hover */
+    border: none; /* Rand entfernen */
+    outline: none; /* Fokus-Ring entfernen */
+    opacity: 0; /* Anfangs unsichtbar */
+    transition: opacity 0.3s; /* Sanfte Überblendung */
+}
+
+.image-container:hover .fab {
+    opacity: 1; /* Bei Hover über dem Container sichtbar machen */
+}
+
+.contact{
+    display: flex;
+
+}
+
+.contact a {
+
+    display: inline-block;
+    width: 50px; /* Breite des Icons */
+    height: 50px; /* Höhe des Icons */
+    background-size: contain; /* Damit das Bild innerhalb des Links skaliert wird */
+    background-repeat: no-repeat; /* Verhindert, dass das Bild wiederholt wird */
+    margin: 30px
+}
+#linkedin{
+    background-size: contain; /* Damit das Bild innerhalb des Links skaliert wird */
+    background-repeat: no-repeat; /* Verhindert, dass das Bild wiederholt wird */
+    padding-left: 20px; /* Fügt Platz für das Icon auf der linken Seite des Links hinzu */
+    background-image: url("linkedINIcon.png");
+}
+
+#github{
+
+    background-size: contain; /* Damit das Bild innerhalb des Links skaliert wird */
+    background-repeat: no-repeat; /* Verhindert, dass das Bild wiederholt wird */
+    padding-left: 20px; /* Fügt Platz für das Icon auf der linken Seite des Links hinzu */
+    background-image: url("gitIcon.png");
+}
