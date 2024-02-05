@@ -89,7 +89,7 @@ h2 {
 
 .vertical-stripe {
     border: 1px solid black;
-
+    overflow: hidden;
     padding-top: 80px;
     display: flex;
     flex-direction: column; /* Anordnen der Elemente in einer vertikalen Linie */
@@ -97,9 +97,25 @@ h2 {
     justify-content: center;
     width: 80%; /* Breite des Streifens */
     height: 100%; /* Volle Höhe des Bildschirms */
-    background-color: #efebdc; /* Verlauf von oben nach unten */
     text-align: left;
+    background: linear-gradient(90deg, blueviolet, black,blueviolet);
+    background-size: 300% 300%; /* Stellen Sie sicher, dass der Hintergrund groß genug ist, um die Animation zu ermöglichen */
+    animation: animateMeshGradient 5s linear infinite;
 }
+
+@keyframes animateMeshGradient {
+    0% {
+        background-position: 0% 50%; /* Startposition */
+    }
+    50% {
+        background-position: 100% 50%; /* Endposition */
+    }
+    100% {
+        background-position: 200% 50%; /* Endposition */
+    }
+}
+
+
 .description{
     width: 600px;
 }
